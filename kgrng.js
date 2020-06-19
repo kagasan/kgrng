@@ -38,8 +38,8 @@ function changeSize(width, height){
     kgrngCanvas.height = height;
 }
 function kgrngClick(x, y){
-    if(infoClickFlag && 460 < x && x < 580 && 440 < y && y < 470){
-        window.open('demo.html', '_blank');
+    if(infoClickFlag && 400 < x && x < 630 && 440 < y && y < 470){
+        window.open('https://kagasan.github.io/kgrng/demo.html', '_blank');
     }
     click(x, y);
 }
@@ -172,7 +172,7 @@ function drawInfo(){
         "}"
     ]);
 
-    drawBox(460, 440, 580, 470, rgb(50, 50, 240), -1);
-    drawString(470, 445, "go to demo.", rgb(240, 240, 240));
+    drawBox(400, 440, 630, 470, rgb(50, 50, 240), -1);
+    drawString(420, 445, "Go this example demo.", rgb(240, 240, 240));
     infoClickFlag = true;
 }
