@@ -88,25 +88,25 @@ function drawCircle(x, y, r, color, thickness = 1){
 function drawPolygon(pts, color = "#000000", thickness = 1){
     infoClickFlag = false;
     if(thickness < 0){
-        this.kgrngCtx.fillStyle = color;
-        this.kgrngCtx.beginPath();
-        this.kgrngCtx.moveTo(pts[0].x, pts[0].y);
+        kgrngCtx.fillStyle = color;
+        kgrngCtx.beginPath();
+        kgrngCtx.moveTo(pts[0].x, pts[0].y);
         for(let i = 1; i < pts.length; i++){
-            this.kgrngCtx.lineTo(pts[i].x, pts[i].y);
+            kgrngCtx.lineTo(pts[i].x, pts[i].y);
         }
-        this.kgrngCtx.lineTo(pts[0].x, pts[0].y);
-        this.kgrngCtx.fill();
+        kgrngCtx.lineTo(pts[0].x, pts[0].y);
+        kgrngCtx.fill();
     }
     else{
-        this.kgrngCtx.strokeStyle = color;
-        this.kgrngCtx.lineWidth = thickness;
-        this.kgrngCtx.beginPath();
-        this.kgrngCtx.moveTo(pts[0].x, pts[0].y);
+        kgrngCtx.strokeStyle = color;
+        kgrngCtx.lineWidth = thickness;
+        kgrngCtx.beginPath();
+        kgrngCtx.moveTo(pts[0].x, pts[0].y);
         for(let i = 1; i < pts.length; i++){
-            this.kgrngCtx.lineTo(pts[i].x, pts[i].y);
+            kgrngCtx.lineTo(pts[i].x, pts[i].y);
         }
-        this.kgrngCtx.lineTo(pts[0].x, pts[0].y);
-        this.kgrngCtx.stroke();
+        kgrngCtx.lineTo(pts[0].x, pts[0].y);
+        kgrngCtx.stroke();
     }
 }
 function drawLine(x1, y1, x2, y2, color = "#000000", thickness = 1){
